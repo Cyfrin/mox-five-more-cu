@@ -3,6 +3,8 @@
 import favorites 
 
 initializes: favorites 
+exports:(favorites.retrieve, favorites.add_person)
+# exports: favorites.__interface__ # cant do this!
 
 # what if favorites doesn't have an __init__ function? 
 @deploy 
@@ -13,6 +15,3 @@ def __init__():
 def store(favorite_number: uint256):
     # favorites.store(favorite_number) # cant do this!
     favorites.my_favorite_number = favorite_number + 5
-
-exports:(favorites.retrieve, favorites.add_person)
-# exports: favorites.__interface__ # cant do this!
