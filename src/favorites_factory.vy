@@ -1,4 +1,4 @@
-# pragma version 0.4.0
+# pragma version 0.4.1
 # @license MIT
 
 from interfaces import i_favorites
